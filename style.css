@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: var(--off-black);
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--white);
+}
+
+.card {
+  background-color: var(--dark-grey);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.card__image img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+}
+
+.card .card__details {
+  padding: 1rem;
+}
+
+.card .card__details h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card .card__details p {
+  color: var(--green);
+  padding-top: 0.5rem;
+  font-weight: 600;
+}
+
+.card .card__quote {
+  padding: 0.5rem;
+}
+.card ul {
+  list-style: none;
+}
+.card li {
+  margin-top: 1rem;
+}
+
+.card li > a {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--grey);
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+.card li > a:hover,
+.card li > a:focus {
+  background-color: var(--green);
+  color: var(--off-black);
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.attribution a {
+  color: var(--green);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 6rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 8rem 1rem;
+  }
+}
